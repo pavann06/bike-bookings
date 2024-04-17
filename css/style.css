@@ -1,0 +1,223 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    padding: 10px 80px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.navbar .logo img {
+    height: 100px; /* Adjust the height as needed */
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links li:last-child {
+    margin-right: 0;
+}
+
+.navbar .nav-links li a {
+    color: black; /* Set text color to black */
+    text-decoration: none;
+}
+
+.right-icons {
+    /* Add any styles for the right icons container */
+}
+
+.right-icons a {
+    color: black; /* Set icon color to black */
+    text-decoration: none;
+}
+
+.right-icons a:hover {
+    color: #666; /* Change icon color on hover */
+}
+
+
+
+
+
+
+/*next section */
+
+.image-slider {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Adjust the height as needed */
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding-left: 120px;
+    border-radius: 30px 30px; 
+    
+}
+
+.active {
+    opacity: 1;
+}
+
+
+/* Decorative Divider */
+/* Decorative Divider */
+.decorative-divider {
+    width: 100%;
+    height: 40px; /* Adjust height of the divider */
+    background-image: url('./assets/wave.png'); /* Path to your border image */
+}
+
+
+
+
+
+
+/*next section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; /* Adjust as needed */
+    width: 70%;
+    padding-left: 200px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.column {
+    width: 30%; /* Adjust as needed */
+    text-align: center;
+}
+
+.column img {
+    width: 70%; /* Make the image fill the container */
+    border-radius: 10px; /* Add border radius to images */
+}
+
+.column p {
+    margin-top: 10px; /* Adjust spacing between image and text */
+}
+
+/* Add vertical line between columns */
+.column:not(:last-child) {
+    border-right: 3px solid #241515; /* Adjust line color as needed */
+}
+
+
+/*next section*/
+
+/* Select Vehicle Model Section */
+.vehicle-model-section {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.section-title {
+    font-size: 48px; /* Adjust title size as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    text-decoration: underline;
+}
+
+.vehicle-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure items stay in a single row */
+    overflow-x: auto; /* Add horizontal scroll if needed */
+    padding-top: 30px;
+}
+
+.vehicle-item {
+    margin: 0 20px; /* Adjust margin as needed */
+}
+
+.vehicle-content {
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.vehicle-content:hover img {
+    transform: translateY(-5px); /* Move image up slightly on hover */
+}
+
+.vehicle-content img {
+    width: 200px; /* Adjust image width as needed */
+    border-radius: 10px; /* Add border radius to images */
+}
+
+.vehicle-name {
+    position: relative;
+    bottom: 0;
+    color: white; /* Text color */
+    background-color: black; /* Background color */
+    padding: 5px 10px; /* Add padding for better visibility */
+    border-radius: 15px; /* Add border radius to name */
+    opacity: 0.8; /* Adjust opacity as needed */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.vehicle-name:hover {
+    transform: translateY(-5px); /* Move name up slightly on hover */
+}
+
+
+
+
+/*responsive*/
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar .logo img {
+        width: 80px;
+    }
+
+    .navbar .nav-links li {
+        margin-right: 10px;
+    }
+
+    .column {
+        flex: 1 1 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .vehicle-item {
+        margin: 0 5px;
+    }
+
+    .vehicle-content img {
+        width: 80px;
+    }
+}
