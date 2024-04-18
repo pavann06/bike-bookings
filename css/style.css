@@ -1,200 +1,184 @@
 /* Reset default margin and padding */
-body, ul {
-    margin: 0;
-    padding: 0;
+body,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; /* Set background color to white */
-    color: black; /* Set text color to black */
-    padding: 10px 80px;
-    border-bottom: 1px solid #ddd;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+  padding: 10px 80px;
+  border-bottom: 1px solid #ddd;
 }
 
 .navbar .logo img {
-    height: 100px; /* Adjust the height as needed */
+  height: 100px; /* Adjust the height as needed */
 }
 
 .navbar .nav-links {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .navbar .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar .nav-links li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .navbar .nav-links li a {
-    color: black; /* Set text color to black */
-    text-decoration: none;
+  color: black; /* Set text color to black */
+  text-decoration: none;
 }
 
 .right-icons {
-    /* Add any styles for the right icons container */
+  /* Add any styles for the right icons container */
 }
 
 .right-icons a {
-    color: black; /* Set icon color to black */
-    text-decoration: none;
+  color: black; /* Set icon color to black */
+  text-decoration: none;
 }
 
 .right-icons a:hover {
-    color: #666; /* Change icon color on hover */
+  color: #666; /* Change icon color on hover */
 }
-
-
-
-
-
 
 /*next section */
 
 .image-slider {
-    margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; /* Adjust as needed */
 }
 
 .slider-container {
-    position: relative;
-    width: 100%;
-    height: 450px; /* Adjust the height as needed */
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
+  position: relative;
+  width: 100%;
+  height: 450px; /* Adjust the height as needed */
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
 }
 
 .slider-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    padding-left: 120px;
-    border-radius: 30px 30px; 
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  padding-left: 5rem;
+  border-radius: 30px 30px;
 }
 
 .active {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /* Decorative Divider */
 /* Decorative Divider */
 .decorative-divider {
-    width: 100%;
-    height: 40px; /* Adjust height of the divider */
-    background-image: url('./assets/wave.png'); /* Path to your border image */
+  width: 100%;
+  height: 40px; /* Adjust height of the divider */
+  background-image: url("./assets/wave.png"); /* Path to your border image */
 }
-
-
-
-
-
 
 /*next section */
 .content-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px; /* Adjust as needed */
-    width: 70%;
-    padding-left: 200px;
-    border-bottom: 1px solid #ddd;
-    
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px; /* Adjust as needed */
+  width: 70%;
+  padding-left: 200px;
+  border-bottom: 1px solid #ddd;
 }
 
 .column {
-    width: 30%; /* Adjust as needed */
-    text-align: center;
+  width: 30%; /* Adjust as needed */
+  text-align: center;
 }
 
-.column img {
-    width: 70%; /* Make the image fill the container */
-    border-radius: 10px; /* Add border radius to images */
+.image {
+    width: 100%; /* Make the image fill the container */
+    max-width: 100%; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to the image */
 }
 
 .column p {
-    margin-top: 10px; /* Adjust spacing between image and text */
+  margin-top: 10px; /* Adjust spacing between image and text */
 }
 
 /* Add vertical line between columns */
-.column:not(:last-child) {
-    border-right: 3px solid #241515; /* Adjust line color as needed */
+.line {
+  border: 3px solid #241515;
 }
-
 
 /*next section*/
 
 /* Select Vehicle Model Section */
 .vehicle-model-section {
-    text-align: center;
-    margin-top: 50px; /* Adjust margin as needed */
+  text-align: center;
+  margin-top: 50px; /* Adjust margin as needed */
 }
 
 .section-title {
-    font-size: 48px; /* Adjust title size as needed */
-    margin-bottom: 20px; /* Adjust margin as needed */
-    text-decoration: underline;
+  font-size: 48px; /* Adjust title size as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  text-decoration: underline;
 }
 
 .vehicle-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap; /* Ensure items stay in a single row */
-    overflow-x: auto; /* Add horizontal scroll if needed */
-    padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; /* Ensure items stay in a single row */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  padding-top: 30px;
 }
 
 .vehicle-item {
-    margin: 0 20px; /* Adjust margin as needed */
+  margin: 0 20px; /* Adjust margin as needed */
 }
 
 .vehicle-content {
-    position: relative;
-    transition: transform 0.3s ease; /* Smooth transition on hover */
+  position: relative;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .vehicle-content:hover img {
-    transform: translateY(-5px); /* Move image up slightly on hover */
+  transform: translateY(-5px); /* Move image up slightly on hover */
 }
 
 .vehicle-content img {
-    width: 200px; /* Adjust image width as needed */
-    border-radius: 10px; /* Add border radius to images */
+  width: 200px; /* Adjust image width as needed */
+  border-radius: 10px; /* Add border radius to images */
 }
 
 .vehicle-name {
-    position: relative;
-    bottom: 0;
-    color: white; /* Text color */
-    background-color: black; /* Background color */
-    padding: 5px 10px; /* Add padding for better visibility */
-    border-radius: 15px; /* Add border radius to name */
-    opacity: 0.8; /* Adjust opacity as needed */
-    transition: transform 0.3s ease; /* Smooth transition on hover */
+  position: relative;
+  bottom: 0;
+  color: white; /* Text color */
+  background-color: black; /* Background color */
+  padding: 5px 10px; /* Add padding for better visibility */
+  border-radius: 15px; /* Add border radius to name */
+  opacity: 0.8; /* Adjust opacity as needed */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .vehicle-name:hover {
-    transform: translateY(-5px); /* Move name up slightly on hover */
+  transform: translateY(-5px); /* Move name up slightly on hover */
 }
-
-
-
 
 /*responsive*/
 
-
 /* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .container {
         padding: 10px;
     }
@@ -219,5 +203,184 @@ body, ul {
 
     .vehicle-content img {
         width: 80px;
+    }
+} */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 2%; /* Adjust padding for smaller screens */
+  }
+
+  .navbar .logo img {
+    height: 60px; /* Adjust logo size for smaller screens */
+  }
+
+  .navbar .nav-links li {
+    margin-right: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .image-slider {
+    margin-top: 10px;
+  }
+  .column {
+    margin-top: 1rem;
+   
+    
+  }
+  .image{
+
+    max-width: 100%;
+   
+
+   
+    
+    
+  }
+  .line {
+    width: 10rem;
+  }
+
+  .slider-container {
+    height: 200px;
+
+    padding-left: 1rem; /* Adjust height for smaller screens */
+    padding-right: 0;
+  }
+
+  .slider-image {
+    border-radius: 5px; /* Adjust border radius for smaller screens */
+  }
+  .content-section {
+    padding-left: 10rem;
+
+    display: grid;
+  }
+  .vehicle-list{
+    display: grid;
+  }
+  .section-title {
+    font-size: 24px; /* Change font size for smaller screens */
+}
+
+
+
+
+.section-title-heading h1 {
+    font-size: 24px; /* Change font size for smaller screens */
+}
+}
+
+/* Add styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px 1%; /* Adjust padding for even smaller screens */
+  }
+
+  .navbar .logo img {
+    height: 50px; /* Adjust logo size for even smaller screens */
+  }
+
+  .navbar .nav-links li {
+    margin-right: 3px; /* Adjust margin for even smaller screens */
+  }
+
+  .slider-container {
+    height: 150px; /* Adjust height for even smaller screens */
+  }
+}
+
+/* Footer styles */
+/* Footer styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+/* Footer columns */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: calc(25% - 20px); 
+    margin-bottom: 20px; 
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-column {
+        flex: 1 0 auto; 
+        margin: 10px 0; 
     }
 }
