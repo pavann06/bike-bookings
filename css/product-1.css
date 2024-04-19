@@ -1,0 +1,114 @@
+
+.product-1{
+    display: flex;
+}
+
+
+
+.slideshow-container-wrapper {
+    width: 50%; /* Make the container occupy 50% of the screen width */
+    margin: 0; /* Remove any default margin */
+    position: relative; /* Ensure relative positioning for absolute children */
+    margin-top: 30px;
+    padding-left: 200px;
+ 
+  }
+  
+  .slideshow-container {
+    position: relative;
+    max-width: 100%; /* Ensure the slideshow container doesn't exceed the wrapper's width */
+    margin-right: auto; /* Move the slideshow container to the left */
+    margin-left: 0; /* Ensure no additional left margin */
+  }
+
+  
+  .mySlides img {
+    max-width: 400px; /* Ensure the image doesn't exceed its container */
+    max-height: 400px; /* Set the maximum height of the image */
+    width: auto; /* Ensure image responsiveness */
+    height: auto; /* Ensure image responsiveness */
+  }
+  
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 120px;
+  }
+  
+ 
+  .mySlides img {
+    width: 80%; /* Decrease image width */
+  }
+  
+ 
+  
+
+  .product-info {
+    text-align: center; /* Center align the content */
+   
+  }
+  
+  .product-info h2 {
+    font-family: Arial, sans-serif; /* Choose a nice font */
+    font-size: 34px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    margin-bottom: 10px; /* Add some space below the heading */
+    text-decoration: underline;
+  }
+  
+  .product-info p {
+    font-size: 24px;
+  }
+  .list{
+    font-size: 20px;
+}
+  
+
+  
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    .slideshow-container-wrapper {
+      width: 100%; /* Make the container occupy 100% of the screen width */
+      padding-left: 20px; /* Adjusted for responsiveness */
+    }
+  
+    .prev {
+      left: 5px; /* Adjusted for responsiveness */
+    }
+  
+    .next {
+      right: 5px; /* Adjusted for responsiveness */
+    }
+  
+    .product-info h2 {
+      font-size: 24px; /* Set font size */
+    }
+  
+    .product-info p {
+      font-size: 18px; /* Set font size */
+    }
+   
+  }
+
+  

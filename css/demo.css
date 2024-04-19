@@ -1,0 +1,52 @@
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .product-1 {
+      flex-direction: column; /* Stack containers vertically on smaller screens */
+    }
+  
+    .information,
+    .slideshow-container-wrapper {
+      width: 100%; /* Make both containers occupy full width on smaller screens */
+    }
+  }
+  
+  /* Ensure proper padding and alignment for the containers */
+  .information,
+  .slideshow-container-wrapper {
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  /* Ensure proper alignment of the next and previous buttons */
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+/* Adjust the size of the images */
+.mySlides img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Ensure image aspect ratio is maintained */
+    max-width: 400px; /* Limit the maximum width of the image */
+    max-height: 300px; /* Limit the maximum height of the image */
+  }
+    

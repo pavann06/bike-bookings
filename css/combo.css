@@ -1,0 +1,76 @@
+/* combo_offers.css */
+
+/* Style for combo offers section */
+.combo-offers-section {
+    padding: 20px;
+    text-align: center; /* Center-align the text */
+  }
+  
+  .section-title-heading {
+    margin-bottom: 20px; /* Add some space below the title */
+  }
+  
+  .section-title {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .combo-offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .combo-offer {
+    margin: 10px; /* Adjust margin for spacing between images */
+    width: 200px; /* Set initial width */
+    position: relative;
+  }
+  
+  .combo-offer .offer-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Add border radius */
+    transition: transform 0.3s ease-in-out; /* Add transition for transform */
+  }
+  
+  .combo-offer .offer-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .combo-offer .offer-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    padding: 5px; /* Padding for text */
+    border-bottom-left-radius: 10px; /* Match border radius */
+    border-bottom-right-radius: 10px; /* Match border radius */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+  }
+  
+  .combo-offer:hover .offer-image {
+    transform: translateY(-5px); /* Lift the image slightly on hover */
+  }
+  
+  .combo-offer:hover .offer-text {
+    opacity: 1; /* Show text on hover */
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .combo-offer {
+      width: 45%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .combo-offer {
+      width: 100%; /* Full width for smallest screens */
+    }
+  }
+  
