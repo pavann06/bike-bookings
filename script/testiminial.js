@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Function to show the next set of testimonial cards
     function showNextTestimonials() {
-      currentIndex += 4;
+      currentIndex += 3;
       if (currentIndex >= testimonialCards.length) {
         currentIndex = 0; // Loop back to the beginning if end is reached
       }
@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Function to show the previous set of testimonial cards
     function showPrevTestimonials() {
-      currentIndex -= 4;
+      currentIndex -= 3;
       if (currentIndex < 0) {
-        currentIndex = testimonialCards.length - 4; // Loop to the end if beginning is reached
+        currentIndex = testimonialCards.length - 3; // Loop to the end if beginning is reached
       }
       updateTestimonials();
     }

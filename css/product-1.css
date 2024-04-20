@@ -11,7 +11,11 @@
     position: relative; /* Ensure relative positioning for absolute children */
     margin-top: 30px;
     padding-left: 200px;
+    
  
+  }
+  .information {
+    box-shadow: 3px;
   }
   
   .slideshow-container {
@@ -19,6 +23,7 @@
     max-width: 100%; /* Ensure the slideshow container doesn't exceed the wrapper's width */
     margin-right: auto; /* Move the slideshow container to the left */
     margin-left: 0; /* Ensure no additional left margin */
+    
   }
 
   
@@ -82,12 +87,22 @@
   }
   .list{
     font-size: 20px;
+    padding-top: 40px;
 }
   
 
   
 /* Mobile styles */
 @media screen and (max-width: 480px) {
+  .product-1{
+    display: grid;
+} 
+ .list {
+  padding-left: 30px;
+ }
+
+
+
     .slideshow-container-wrapper {
       width: 100%; /* Make the container occupy 100% of the screen width */
       padding-left: 20px; /* Adjusted for responsiveness */

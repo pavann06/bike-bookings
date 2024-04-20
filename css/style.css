@@ -50,7 +50,7 @@ ul {
   color: #666; /* Change icon color on hover */
 }
 
-/*next section */
+/*next section------------------------------------------------------------------------------------------ */
 
 .image-slider {
   margin-top: 20px; /* Adjust as needed */
@@ -61,7 +61,6 @@ ul {
   width: 100%;
   height: 450px; /* Adjust the height as needed */
   overflow: hidden;
-  
 }
 
 .slider-image {
@@ -88,7 +87,7 @@ ul {
   background-image: url("./assets/wave.png"); /* Path to your border image */
 }
 
-/*next section */
+/*next section-------------------------------------------------------------------------------------- */
 .content-section {
   display: flex;
   justify-content: space-between;
@@ -104,10 +103,10 @@ ul {
 }
 
 .image {
-    width: 100%; /* Make the image fill the container */
-    max-width: 100%; /* Limit the maximum width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add border radius to the image */
+  width: 100%; /* Make the image fill the container */
+  max-width: 100%; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add border radius to the image */
 }
 
 .column p {
@@ -119,7 +118,7 @@ ul {
   border: 3px solid #241515;
 }
 
-/*next section*/
+/*next section*-----------------------------------------------------------------------------------------/
 
 /* Select Vehicle Model Section */
 .vehicle-model-section {
@@ -177,35 +176,6 @@ ul {
 
 /*responsive*/
 
-/* Media queries for responsiveness */
-/* @media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .navbar .logo img {
-        width: 80px;
-    }
-
-    .navbar .nav-links li {
-        margin-right: 10px;
-    }
-
-    .column {
-        flex: 1 1 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .vehicle-item {
-        margin: 0 5px;
-    }
-
-    .vehicle-content img {
-        width: 80px;
-    }
-} */
-
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 10px 2%; /* Adjust padding for smaller screens */
@@ -224,17 +194,9 @@ ul {
   }
   .column {
     margin-top: 1rem;
-   
-    
   }
-  .image{
-
+  .image {
     max-width: 100%;
-   
-
-   
-    
-    
   }
   .line {
     width: 10rem;
@@ -255,19 +217,16 @@ ul {
 
     display: grid;
   }
-  .vehicle-list{
+  .vehicle-list {
     display: grid;
   }
   .section-title {
     font-size: 24px; /* Change font size for smaller screens */
-}
+  }
 
-
-
-
-.section-title-heading h1 {
+  .section-title-heading h1 {
     font-size: 24px; /* Change font size for smaller screens */
-}
+  }
 }
 
 /* Add styles for even smaller screens */
@@ -288,3 +247,5 @@ ul {
     height: 150px; /* Adjust height for even smaller screens */
   }
 }
+
+

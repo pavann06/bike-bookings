@@ -3,6 +3,8 @@
     text-align: center; /* Center the heading */
     margin-top: 50px; /* Add some space at the top */
     overflow: hidden; /* Hide the horizontal scrollbar */
+    width: 90%;
+    padding-left: 40px;
   }
   
   .section-title {
@@ -34,7 +36,7 @@
   }
   
   .testimonial {
-    padding: 20px; /* Add padding inside the card */
+    padding: 10px; /* Add padding inside the card */
   }
   
   .testimonial h3 {

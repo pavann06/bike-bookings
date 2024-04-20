@@ -54,7 +54,7 @@
   }
   
   .combo-offer:hover .offer-image {
-    transform: translateY(-5px); /* Lift the image slightly on hover */
+    transform: translateY(-10px); /* Lift the image slightly on hover */
   }
   
   .combo-offer:hover .offer-text {
